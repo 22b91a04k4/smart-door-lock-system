@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Door Lock System</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f4f4f4;
+margin:0;
+padding:0;
+}
+
+.section{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:white;
+margin-top:40px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+text-align:center;
+color:#333;
+}
+
+img{
+display:block;
+margin:auto;
+width:70%;
+border-radius:10px;
+margin-top:20px;
+}
+
+p{
+font-size:16px;
+line-height:1.6;
+color:#555;
+}
+
+ul{
+margin-top:10px;
+}
+
+li{
+margin-bottom:6px;
+}
+
+a{
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+color:white;
+background:#007BFF;
+padding:10px 20px;
+border-radius:6px;
+}
+
+a:hover{
+background:#0056b3;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="section">
+
+<h2>Smart Door Lock System</h2>
+
+<img src="smart-door-lock-system.png" alt="Smart Door Lock System">
+
+<h3>Project Overview</h3>
+
+<p>
+The Smart Door Lock System is an IoT-based security solution developed using
+Arduino Uno and RFID technology. The system verifies authorized users using
+RFID cards and unlocks the door automatically using a servo motor.
+</p>
+
+<h3>Components Used</h3>
+
+<ul>
+<li>Arduino UNO</li>
+<li>RFID RC522 Module</li>
+<li>Ultrasonic Sensor</li>
+<li>LCD1602 Display with I2C Module</li>
+<li>Servo Motor</li>
+<li>Green LED</li>
+<li>Red LED</li>
+<li>Buzzer</li>
+<li>Breadboard and Connecting Wires</li>
+</ul>
+
+<h3>Working Principle</h3>
+
+<p>
+When a person comes within the detection range of the ultrasonic sensor,
+the LCD display shows a message asking the user to verify their identity.
+The user places an RFID card near the RFID reader.
+</p>
+
+<p>
+If the RFID card matches the authorized ID stored in the system,
+the servo motor rotates and unlocks the door. The green LED turns ON
+and the buzzer gives a short beep indicating successful authentication.
+</p>
+
+<p>
+If an unauthorized card is detected, the red LED blinks and the buzzer
+sounds an alert indicating access denied.
+</p>
+
+<a href="index.html">← Back to Home</a>
+
+</section>
+
+</body>
+</html>
